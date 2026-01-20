@@ -3,6 +3,7 @@ import './globals.css';
 import Navbar from '../components/Navbar';
 import SmoothScroll from '../components/SmoothScroll';
 import CubertoCursor from '../components/CubertoCursor';
+import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
   title: 'AutoAgenx - Affiliate Marketing Agency',
@@ -21,6 +22,7 @@ export default function RootLayout({
           <CubertoCursor />
           <Navbar />
           {children}
+          <Footer />
         </SmoothScroll>
       </body>
     </html>

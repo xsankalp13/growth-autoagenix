@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import Magnetic from './Magnetic'; // Import Magnetic
 import styles from './Navbar.module.css';
 
 export default function Navbar() {
@@ -18,8 +19,12 @@ export default function Navbar() {
             <div className={styles.actions}>
                 <a href="mailto:digital@manarx.com" className={styles.emailLink}>digital@manarx.com</a>
                 <div className={styles.authLinks}>
-                    <Link href="#signin" className={styles.linkBtn}>Sign-in</Link>
-                    <Link href="#contact" className={styles.linkBtn}>Get in touch</Link>
+                    <Magnetic>
+                        <Link href="#signin" className={styles.linkBtn} data-cursor-stick>Sign-in</Link>
+                    </Magnetic>
+                    <Magnetic>
+                        <Link href="#contact" className={styles.linkBtn} data-cursor-stick data-cursor="-inverse">Get in touch</Link>
+                    </Magnetic>
                 </div>
             </div>
         </nav>

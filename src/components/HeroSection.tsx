@@ -1,7 +1,9 @@
 'use client';
 import React from 'react';
+import Magnetic from './Magnetic';
 import FloatingCharacter from './FloatingCharacter';
 import GlowingOrb from './GlowingOrb';
+import ScrollIndicator from './ScrollIndicator';
 import styles from './HeroSection.module.css';
 
 export default function HeroSection() {
@@ -13,6 +15,7 @@ export default function HeroSection() {
                 <path d="M720,0 C720,400 1140,900 1440,900" className={styles.curve} />
                 <circle cx="720" cy="450" r="300" className={styles.curveCircle} />
             </svg>
+            <ScrollIndicator />
             <div className={styles.grid}>
                 <div className={styles.content}>
                     <h1 className={styles.title}>
@@ -22,11 +25,15 @@ export default function HeroSection() {
                         Digital marketing considers how each individual tool can convert prospects. A brand's digital marketing strategy may use multiple platforms or focus all of its <strong>efforts on 1 platform.</strong>
                     </p>
                     <div className={styles.ctaGroup}>
-                        <button className={styles.primaryButton}>
-                            <span className={styles.arrowIcon}>↗</span>
-                            Get in touch
-                        </button>
-                        <a href="#" className={styles.linkButton}>Learn more</a>
+                        <Magnetic>
+                            <button className={styles.primaryButton} data-cursor="-inverse">
+                                <span className={styles.arrowIcon}>↗</span>
+                                Get in touch
+                            </button>
+                        </Magnetic>
+                        <Magnetic>
+                            <a href="#" className={styles.linkButton} data-cursor-stick>Learn more</a>
+                        </Magnetic>
                     </div>
                 </div>
                 <div className={styles.visuals}>

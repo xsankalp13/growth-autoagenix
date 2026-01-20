@@ -1,0 +1,121 @@
+.section {
+    padding: 100px 5vw;
+    background-color: var(--background);
+    color: var(--foreground);
+    max-width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* For slider */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.title {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.controls {
+    display: flex;
+    gap: 15px;
+}
+
+.controlBtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--foreground);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.controlBtn:hover:not(:disabled) {
+    background: var(--foreground);
+    color: var(--background);
+    border-color: var(--foreground);
+}
+
+.controlBtn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.track {
+    display: flex;
+    gap: 40px;
+    cursor: grab;
+}
+
+.track:active {
+    cursor: grabbing;
+}
+
+.card {
+    min-width: 100%;
+    /* Mobile default */
+    background: transparent;
+    padding-right: 20px;
+}
+
+@media (min-width: 768px) {
+    .card {
+        min-width: calc(50% - 20px);
+        /* 2 cards on desktop */
+    }
+}
+
+.quote {
+    font-family: var(--font-body);
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #333;
+}
+
+.authorInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--foreground);
+}
+
+.designation {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
