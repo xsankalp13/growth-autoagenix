@@ -10,13 +10,13 @@ export default function Footer() {
                 <div className={styles.column}>
                     <div className={styles.logo}>
                         <div className={styles.logoIcon}></div>
-                        Autoagenix
+                        Growth Autoagenix
                     </div>
                     <div className={styles.socials}>
                         <a href="#" className={styles.socialIcon} aria-label="Facebook"><Facebook size={18} /></a>
                         <a href="#" className={styles.socialIcon} aria-label="Instagram"><Instagram size={18} /></a>
                         <a href="#" className={styles.socialIcon} aria-label="X (Twitter)"><Twitter size={18} /></a>
-                        <a href="#" className={styles.socialIcon} aria-label="YouTube"><Youtube size={18} /></a>
+                        <a href="#" className={styles.socialIcon} aria-label="LinkedIn"><Youtube size={18} /></a>
                     </div>
                 </div>
 
@@ -54,7 +54,7 @@ export default function Footer() {
             {/* Bottom Bar */}
             <div className={styles.bottomSection}>
                 <div className={styles.copyright}>
-                    All rights reserved @autoagenix.io
+                    All rights reserved @growthautoagenix.com
                 </div>
                 <div className={styles.legalLinks}>
                     <a href="#" className={styles.legalLink}>Terms & Conditions</a>

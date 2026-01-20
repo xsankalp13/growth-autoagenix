@@ -7,28 +7,28 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const testimonials = [
     {
         id: 1,
-        quote: "As a small business owner, I was initially overwhelmed by the idea of managing our online presence. Partnering with AutoAgenix was a game-changer for us. They developed a tailored strategy that not only increased our website traffic but also significantly boosted our social media engagement.",
+        quote: "We were looking for a way to scale our influencer presence without burning through a monthly retainer. Growth Autoagenix set up our entire affiliate ecosystem and within the first month, we saw a 40% increase in attributed sales with zero upfront cost.",
         name: "Sarah L",
-        designation: "CEO of NuHealth",
+        designation: "Head of Growth at NuHealth",
         image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
     },
     {
         id: 2,
-        quote: "What I appreciate most is their transparency and dedication to our success. They are always available to answer questions and makes us feel like we have a true partner. We couldn't be happier with the results. I highly recommend them to any business looking to grow.",
+        quote: "The automation is what sets them apart. They onboarded over 100 influencers for our latest launch in under two weeks. Managing payouts and tracking used to be a nightmare, but their system makes it completely hands-off for our team.",
         name: "John Lynn",
         designation: "Founder of TechFlow",
         image: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
     },
     {
         id: 3,
-        quote: "The ROI we've seen since working with AutoAgenix has been incredible. Their PPC campaigns effectively targeted our ideal customers, lowering our cost per acquisition while increasing sales volume. Their team is professional, data-driven, and results-oriented.",
+        quote: "Growth Autoagenix delivered the most transparent ROI we've ever seen from an agency. Since we only pay on sales, it's a completely risk-free partnership. They've become an essential extension of our marketing department.",
         name: "Emily Chen",
-        designation: "Marketing Director at EcoStyle",
+        designation: "Director of Marketing at EcoStyle",
         image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
     },
     {
         id: 4,
-        quote: "From SEO to content marketing, they handled everything seamlessly. Our organic traffic has doubled in just six months, and the quality of leads has improved dramatically. It's rare to find an agency that delivers exactly what they promise.",
+        quote: "Their focus on high-tier influencers is unmatched. We aren't just getting sales; we're building long-term brand equity with partners who actually care about our mission. The automated outreach feels incredibly personal and authentic.",
         name: "Michael Ross",
         designation: "COO of VentureLoop",
         image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
@@ -58,7 +58,7 @@ export default function TestimonialsSection() {
     return (
         <section className={styles.section}>
             <div className={styles.header}>
-                <h2 className={styles.title}>What client says</h2>
+                <h2 className={styles.title}>Results Speak Louder</h2>
                 <div className={styles.controls}>
                     <button
                         className={styles.controlBtn}

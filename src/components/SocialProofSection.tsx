@@ -8,7 +8,7 @@ export default function SocialProofSection() {
         <section className={styles.section}>
             {/* Top Row: Trusted Brands */}
             <div className={styles.brandsRow}>
-                <div className={styles.brandsTitle}>Trusted by Thousand top brands</div>
+                <div className={styles.brandsTitle}>Trusted by established brands scaling with influence</div>
                 <div className={styles.brandsList}>
                     <div className={styles.brand}><span>❖</span> slack</div>
                     <div className={styles.brand}><span>🎥</span> zoom</div>
@@ -21,7 +21,7 @@ export default function SocialProofSection() {
             {/* Middle Row: About Text */}
             <div className={styles.aboutSection}>
                 <h2 className={styles.mainText}>
-                    Our flexible team has a wide range of skills, which lets us look at projects from a complete point of view that combines creativity <span className={styles.emoji}>🎨</span> and usefulness <span className={styles.emoji}>✨</span>.
+                    Our automated systems and expert management provide a 360-degree approach to affiliate marketing, combining AI-driven precision <span className={styles.emoji}>🤖</span> with performance-led growth <span className={styles.emoji}>📈</span>.
                 </h2>
             </div>
 
@@ -29,24 +29,24 @@ export default function SocialProofSection() {
             <div className={styles.statsContainer}>
                 <div className={styles.introRow}>
                     <div className={styles.introLeft}>
-                        <h3 className={styles.introTitle}>Bring in targeted visitors and increase sales.</h3>
+                        <h3 className={styles.introTitle}>Bring in targeted organic traffic and increase sales.</h3>
                         <div className={styles.contactContainer}>
-                            <button className={styles.contactBtn}>Contact US</button>
+                            <button className={styles.contactBtn}>Book a Call</button>
                         </div>
                     </div>
 
                     <div className={styles.statsGrid}>
                         <div className={styles.statItem}>
-                            <span className={styles.statNumber}>12<sup className={styles.statPlus}>+</sup></span>
-                            <span className={styles.statLabel}>Year Experience</span>
+                            <span className={styles.statNumber}>100<sup className={styles.statPlus}>%</sup></span>
+                            <span className={styles.statLabel}>Risk-Free</span>
                         </div>
                         <div className={styles.statItem}>
-                            <span className={styles.statNumber}>4.3K<sup className={styles.statPlus}>+</sup></span>
-                            <span className={styles.statLabel}>Total Revenue</span>
+                            <span className={styles.statNumber}>$0<sup className={styles.statPlus}></sup></span>
+                            <span className={styles.statLabel}>Upfront Fees</span>
                         </div>
                         <div className={styles.statItem}>
-                            <span className={styles.statNumber}>40<sup className={styles.statPlus}>+</sup></span>
-                            <span className={styles.statLabel}>Professional Team</span>
+                            <span className={styles.statNumber}>500<sup className={styles.statPlus}>+</sup></span>
+                            <span className={styles.statLabel}>Partners Joined</span>
                         </div>
                     </div>
                 </div>
@@ -54,23 +54,23 @@ export default function SocialProofSection() {
                 <div className={styles.cardsGrid}>
                     <div className={styles.card}>
                         <div className={styles.cardIcon}><Rocket size={24} /></div>
-                        <strong className={styles.cardTitle}>Increase Traffic</strong>
+                        <strong className={styles.cardTitle}>Automated Outreach</strong>
                         <p className={styles.cardDescription}>
-                            Our expertise will help you to improve visibility in search engine results.
+                            Our AI agents handle hundreds of personalized influencer conversations simultaneously.
                         </p>
                     </div>
                     <div className={styles.card}>
                         <div className={styles.cardIcon}><BarChart3 size={24} /></div>
-                        <strong className={styles.cardTitle}>Improved Rankings</strong>
+                        <strong className={styles.cardTitle}>Performance Only</strong>
                         <p className={styles.cardDescription}>
-                            We employ ultimate strategic SEO to enhance your website's ranking worldwide.
+                            You only pay for verified sales. No complex retainers, just pure revenue growth.
                         </p>
                     </div>
                     <div className={styles.card}>
                         <div className={styles.cardIcon}><Users size={24} /></div>
-                        <strong className={styles.cardTitle}>Targeted Audience</strong>
+                        <strong className={styles.cardTitle}>Niche Influence</strong>
                         <p className={styles.cardDescription}>
-                            We focus on targeting specific keywords to attract your ideal audience.
+                            We filter for quality, ensuring your brand is represented by authority figures in your niche.
                         </p>
                     </div>
                 </div>

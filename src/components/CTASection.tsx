@@ -16,22 +16,22 @@ export default function CTASection() {
             <div className={styles.container}>
                 <div className={styles.contentLeft}>
                     <h2 className={styles.heading}>
-                        I would like to engage in <br />
-                        a conversation regarding <br />
-                        your endeavor
+                        Ready to scale your <br />
+                        brand with zero <br />
+                        financial risk?
                     </h2>
 
                     <form className={styles.formContainer} onSubmit={(e) => e.preventDefault()}>
                         <div className={styles.inputWrapper}>
                             <input
                                 type="email"
-                                placeholder="Enter your email..."
+                                placeholder="Enter your business email..."
                                 className={styles.input}
                                 required
                             />
                         </div>
                         <button type="submit" className={styles.submitBtn}>
-                            Get Started
+                            Book a Call
                         </button>
                     </form>
                 </div>

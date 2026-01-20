@@ -6,41 +6,41 @@ import { Search, TrendingUp, Globe, Heart, DollarSign, Mail } from 'lucide-react
 const services = [
     {
         icon: <Search size={28} />,
-        title: "Search Engine Optimization (SEO)",
-        description: "We employ ultimate strategic SEO to enhance your website's ranking world wide."
+        title: "AI-Driven Influencer Discovery",
+        description: "We use proprietary automation to identify and vet the perfect influencers for your brand, ensuring authentic alignment."
     },
     {
         icon: <TrendingUp size={28} />,
-        title: "Conversion Rate Optimization (CRO)",
-        description: "We employ ultimate strategic SEO to enhance your website's ranking world wide."
+        title: "Automated Outreach & Onboarding",
+        description: "Our system handles the heavy lifting of contacting and onboarding hundreds of influencers at scale."
     },
     {
         icon: <Globe size={28} />,
-        title: "Online Reputation Management (ORM)",
-        description: "We employ ultimate strategic SEO to enhance your website's ranking world wide."
+        title: "End-to-End Program Management",
+        description: "From tracking links to payout automation, we manage every technical aspect of your affiliate ecosystem."
     },
     {
         icon: <Heart size={28} />,
-        title: "Social Media Marketing",
-        description: "We employ ultimate strategic SEO to enhance your website's ranking world wide."
+        title: "Global Affiliate Scaling",
+        description: "We expand your brand into new markets by building localized affiliate networks that understand regional nuances."
     },
     {
         icon: <DollarSign size={28} />,
-        title: "Pay Per Click (PPC)",
-        description: "We employ ultimate strategic SEO to enhance your website's ranking world wide."
+        title: "Performance-Based Growth",
+        description: "Eliminate wasted ad spend. You only pay for verified sales, ensuring a positive ROI on every marketing dollar."
     },
     {
         icon: <Mail size={28} />,
-        title: "Email Marketing Automation",
-        description: "We employ ultimate strategic SEO to enhance your website's ranking world wide."
+        title: "Strategic Content Guidance",
+        description: "We guide your affiliates to create high-converting content that resonates while maintaining your premium identity."
     }
 ];
 
 export default function ServicesSection() {
     return (
-        <section className={styles.section}>
+        <section className={styles.section} id="services">
             <div className={styles.titleContainer}>
-                <h2 className={styles.title}>We provide our customer the finest service available</h2>
+                <h2 className={styles.title}>Data-Driven Performance. Zero Financial Risk.</h2>
             </div>
 
             <div className={styles.grid}>

@@ -13,7 +13,7 @@ export default function GlowingOrb() {
                 <div className={styles.orbGlow} />
             </div>
             <div className={styles.orbText}>
-                MORE<br />SALES
+                PURE<br />GROWTH
             </div>
         </div>
     );

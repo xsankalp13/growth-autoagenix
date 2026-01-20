@@ -19,20 +19,20 @@ export default function HeroSection() {
             <div className={styles.grid}>
                 <div className={styles.content}>
                     <h1 className={styles.title}>
-                        Affiliate<br />Marketing<br />Agency
+                        Scale Your Brand<br />With Zero<br />Upfront Risk
                     </h1>
                     <p className={styles.subtitle}>
-                        Digital marketing considers how each individual tool can convert prospects. A brand's digital marketing strategy may use multiple platforms or focus all of its <strong>efforts on 1 platform.</strong>
+                        We build, automate, and manage your high-performance affiliate program. You only pay when we generate sales. <strong>No retainers, no hidden fees—just pure growth.</strong>
                     </p>
                     <div className={styles.ctaGroup}>
                         <Magnetic>
                             <button className={styles.primaryButton} data-cursor="-inverse">
                                 <span className={styles.arrowIcon}>↗</span>
-                                Get in touch
+                                Book a call
                             </button>
                         </Magnetic>
                         <Magnetic>
-                            <a href="#" className={styles.linkButton} data-cursor-stick>Learn more</a>
+                            <a href="#services" className={styles.linkButton} data-cursor-stick>How it works</a>
                         </Magnetic>
                     </div>
                 </div>
