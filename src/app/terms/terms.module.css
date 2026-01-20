@@ -1,0 +1,75 @@
+.section {
+    padding: 160px var(--padding-x) 100px;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.heading {
+    font-family: var(--font-heading);
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 3rem;
+    color: var(--text-primary);
+}
+
+.lastUpdated {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.content {
+    font-family: var(--font-body);
+    color: var(--text-primary);
+}
+
+.subHeading {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 3rem 0 1.5rem;
+    color: var(--text-primary);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 0.5rem;
+}
+
+.text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.list {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.listItem {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    position: relative;
+}
+
+.listItem::before {
+    content: "→";
+    position: absolute;
+    left: -1.5rem;
+    color: var(--accent-gold);
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding-top: 120px;
+    }
+}

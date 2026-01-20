@@ -3,9 +3,11 @@ import React from 'react';
 import styles from './SocialProofSection.module.css';
 import { Rocket, BarChart3, Users } from 'lucide-react';
 
+import Magnetic from './Magnetic';
+
 export default function SocialProofSection() {
     return (
-        <section className={styles.section}>
+        <section className={styles.section} id="how-it-works">
             {/* Top Row: Trusted Brands */}
             <div className={styles.brandsRow}>
                 <div className={styles.brandsTitle}>Trusted by established brands scaling with influence</div>
@@ -31,7 +33,9 @@ export default function SocialProofSection() {
                     <div className={styles.introLeft}>
                         <h3 className={styles.introTitle}>Bring in targeted organic traffic and increase sales.</h3>
                         <div className={styles.contactContainer}>
-                            <button className={styles.contactBtn}>Book a Call</button>
+                            <Magnetic>
+                                <button className={styles.contactBtn} data-cursor="-inverse">Book a Call</button>
+                            </Magnetic>
                         </div>
                     </div>
 

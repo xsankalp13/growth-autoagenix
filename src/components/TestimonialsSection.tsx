@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import styles from './TestimonialsSection.module.css';
 import { motion, useMotionValue, animate } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import Magnetic from './Magnetic';
 
 const testimonials = [
     {
@@ -56,26 +57,32 @@ export default function TestimonialsSection() {
     };
 
     return (
-        <section className={styles.section}>
+        <section className={styles.section} id="results">
             <div className={styles.header}>
                 <h2 className={styles.title}>Results Speak Louder</h2>
                 <div className={styles.controls}>
-                    <button
-                        className={styles.controlBtn}
-                        onClick={handlePrev}
-                        disabled={currentIndex === 0}
-                        aria-label="Previous testimonial"
-                    >
-                        <ChevronLeft size={24} />
-                    </button>
-                    <button
-                        className={styles.controlBtn}
-                        onClick={handleNext}
-                        disabled={currentIndex >= testimonials.length - 2} // Disable when at end (showing 2)
-                        aria-label="Next testimonial"
-                    >
-                        <ChevronRight size={24} />
-                    </button>
+                    <Magnetic>
+                        <button
+                            className={styles.controlBtn}
+                            onClick={handlePrev}
+                            disabled={currentIndex === 0}
+                            aria-label="Previous testimonial"
+                            data-cursor-stick
+                        >
+                            <ChevronLeft size={24} />
+                        </button>
+                    </Magnetic>
+                    <Magnetic>
+                        <button
+                            className={styles.controlBtn}
+                            onClick={handleNext}
+                            disabled={currentIndex >= testimonials.length - 2} // Disable when at end (showing 2)
+                            aria-label="Next testimonial"
+                            data-cursor-stick
+                        >
+                            <ChevronRight size={24} />
+                        </button>
+                    </Magnetic>
                 </div>
             </div>
 

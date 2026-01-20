@@ -1,0 +1,89 @@
+'use client';
+
+import React from 'react';
+import styles from './terms.module.css';
+
+export default function TermsPage() {
+    return (
+        <main className={styles.section}>
+            <div className={styles.container}>
+                <h1 className={styles.heading}>Terms & Conditions</h1>
+                <p className={styles.lastUpdated}>Last Updated: January 20, 2026</p>
+
+                <div className={styles.content}>
+                    <section>
+                        <h2 className={styles.subHeading}>1. Introduction</h2>
+                        <p className={styles.text}>
+                            Welcome to Growth Autoagenix. These Terms and Conditions govern your use of our services and website. By engaging with Growth Autoagenix, you agree to these terms in full. If you disagree with any part of these terms, you must not use our services.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 className={styles.subHeading}>2. Scope of Services</h2>
+                        <p className={styles.text}>
+                            Growth Autoagenix provides automated affiliate management services, including but not limited to:
+                        </p>
+                        <ul className={styles.list}>
+                            <li className={styles.listItem}>Influencer discovery and vetting using proprietary AI tools.</li>
+                            <li className={styles.listItem}>Automated outreach and onboarding of affiliate partners.</li>
+                            <li className={styles.listItem}>Full program management including tracking and reporting.</li>
+                            <li className={styles.listItem}>Content strategy and guidance for affiliate partners.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 className={styles.subHeading}>3. Performance-Based Model</h2>
+                        <p className={styles.text}>
+                            Our primary service operates on a performance-based commission model. This means:
+                        </p>
+                        <ul className={styles.list}>
+                            <li className={styles.listItem}>There are no upfront management fees or monthly retainers for the standard affiliate program setup.</li>
+                            <li className={styles.listItem}>Fees are only due on "Qualifying Sales"—sales directly attributed to the affiliate program managed by us.</li>
+                            <li className={styles.listItem}>The specific commission percentage will be outlined in your individual Service Agreement.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 className={styles.subHeading}>4. Brand Responsibilities</h2>
+                        <p className={styles.text}>
+                            To ensure the success of the program, the Brand agrees to:
+                        </p>
+                        <ul className={styles.list}>
+                            <li className={styles.listItem}>Provide accurate product information and marketing assets.</li>
+                            <li className={styles.listItem}>Maintain a working e-commerce platform capable of tracking affiliate links.</li>
+                            <li className={styles.listItem}>Honor payouts for verified sales made by affiliate partners.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 className={styles.subHeading}>5. Confidentiality</h2>
+                        <p className={styles.text}>
+                            Both parties agree to treat all non-public information, including proprietary automation techniques, influencer lists, and internal sales data, as strictly confidential. This obligation extends beyond the termination of the service agreement.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 className={styles.subHeading}>6. Limitation of Liability</h2>
+                        <p className={styles.text}>
+                            Growth Autoagenix shall not be liable for any indirect, incidental, or consequential damages resulting from the use of our services. While we strive to maximize growth, we do not guarantee specific sales volumes, as market conditions and brand reputation are external factors.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 className={styles.subHeading}>7. Termination</h2>
+                        <p className={styles.text}>
+                            Either party may terminate the partnership with 30 days' written notice. Upon termination, the Brand remains responsible for paying commissions on sales generated by affiliates onboarded during the active partnership period.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 className={styles.subHeading}>8. Governing Law</h2>
+                        <p className={styles.text}>
+                            These terms shall be governed by and construed in accordance with the laws of the jurisdiction in which Growth Autoagenix is registered, without regard to its conflict of law provisions.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </main>
+    );
+}

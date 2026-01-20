@@ -6,8 +6,8 @@ import CubertoCursor from '../components/CubertoCursor';
 import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
-  title: 'AutoAgenx - Affiliate Marketing Agency',
-  description: 'Premium affiliate marketing agency focused on growth.',
+  title: 'Growth Autoagenix - Affiliate Marketing Agency',
+  description: 'Premium performance-based affiliate marketing agency for brands.',
 };
 
 export default function RootLayout({

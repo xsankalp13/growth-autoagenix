@@ -4,6 +4,8 @@ import React from 'react';
 import styles from './CTASection.module.css';
 import Image from 'next/image';
 
+import Magnetic from './Magnetic';
+
 export default function CTASection() {
     return (
         <section className={styles.section}>
@@ -30,9 +32,11 @@ export default function CTASection() {
                                 required
                             />
                         </div>
-                        <button type="submit" className={styles.submitBtn}>
-                            Book a Call
-                        </button>
+                        <Magnetic>
+                            <button type="submit" className={styles.submitBtn} data-cursor="-inverse">
+                                Book a Call
+                            </button>
+                        </Magnetic>
                     </form>
                 </div>
 

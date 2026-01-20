@@ -132,8 +132,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--accent-gold);
-    /* Or primary color */
+    color: var(--text-primary);
     cursor: pointer;
     transition: transform 0.2s ease;
 }
@@ -170,15 +169,31 @@
     font-family: var(--font-body);
     font-size: 0.9rem;
     color: var(--text-secondary);
-    /* Darker text */
     text-decoration: none;
     font-weight: 500;
     cursor: pointer;
-    transition: color 0.2s ease;
+    transition: color 0.3s ease;
+    position: relative;
+    padding: 0.2rem 0;
 }
 
 .legalLink:hover {
     color: var(--text-primary);
+}
+
+.legalLink::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--text-primary);
+    transition: width 0.3s ease;
+}
+
+.legalLink:hover::after {
+    width: 100%;
 }
 
 @media (max-width: 768px) {

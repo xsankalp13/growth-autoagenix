@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import styles from './Footer.module.css';
 import { Facebook, Instagram, Twitter, Youtube, Send } from 'lucide-react';
 
@@ -57,8 +58,8 @@ export default function Footer() {
                     All rights reserved @growthautoagenix.com
                 </div>
                 <div className={styles.legalLinks}>
-                    <a href="#" className={styles.legalLink}>Terms & Conditions</a>
-                    <a href="#" className={styles.legalLink}>Privacy Policy</a>
+                    <Link href="/terms" className={styles.legalLink}>Terms & Conditions</Link>
+                    <Link href="/privacy" className={styles.legalLink}>Privacy Policy</Link>
                 </div>
             </div>
         </footer>

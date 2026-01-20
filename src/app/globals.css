@@ -5,8 +5,9 @@
   --bg-color: #f4f4f4;
   --text-primary: #0a0a0a;
   --text-secondary: #555555;
-  --accent-gold: #D4AF37;
-  --accent-gold-glow: rgba(212, 175, 55, 0.4);
+  --accent-primary: #4F46E5;
+  /* Professional Indigo */
+  --accent-primary-glow: rgba(79, 70, 229, 0.4);
   --font-heading: 'Syne', sans-serif;
   --font-body: 'Inter', sans-serif;
   --padding-x: 5vw;

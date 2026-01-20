@@ -40,11 +40,53 @@
     font-size: 0.9rem;
     color: var(--text-secondary);
     text-decoration: none;
-    transition: color 0.2s;
+    transition: color 0.3s ease;
+    position: relative;
+    padding: 0.5rem 0;
 }
 
 .link:hover {
     color: var(--text-primary);
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--text-primary);
+    transition: width 0.3s ease;
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+.linkBtn {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.linkBtn::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background-color: var(--text-primary);
+    transition: width 0.3s ease;
+}
+
+.linkBtn:hover::after {
+    width: 100%;
 }
 
 .actions {

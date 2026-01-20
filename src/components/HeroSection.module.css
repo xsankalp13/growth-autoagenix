@@ -14,7 +14,7 @@
     right: 0;
     width: 100%;
     height: 50vh;
-    background: radial-gradient(circle, rgba(255, 240, 200, 0.4) 0%, rgba(255, 255, 255, 0) 60%);
+    background: radial-gradient(circle, var(--accent-primary-glow) 0%, rgba(255, 255, 255, 0) 60%);
     filter: blur(60px);
     z-index: 0;
     pointer-events: none;
@@ -127,10 +127,23 @@
     font-family: var(--font-body);
     font-size: 1rem;
     font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
 }
 
-.linkButton:hover {
-    text-decoration: underline;
+.linkButton::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background-color: var(--text-primary);
+    transition: width 0.3s ease;
+}
+
+.linkButton:hover::after {
+    width: 100%;
 }
 
 /* Specific overrides for pixel perfect match */
