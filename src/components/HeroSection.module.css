@@ -1,0 +1,160 @@
+.hero {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+.backgroundBlur {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 50vh;
+    background: radial-gradient(circle, rgba(255, 240, 200, 0.4) 0%, rgba(255, 255, 255, 0) 60%);
+    filter: blur(60px);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.backgroundCurves {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.curve {
+    fill: none;
+    stroke: rgba(0, 0, 0, 0.08);
+    stroke-width: 1;
+}
+
+.curveCircle {
+    fill: none;
+    stroke: rgba(0, 0, 0, 0.05);
+    stroke-width: 1;
+}
+
+@media (min-width: 1024px) {
+    .backgroundBlur {
+        top: -10%;
+        right: -10%;
+        width: 60vw;
+        height: 60vw;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 var(--padding-x);
+    height: 100%;
+    align-items: center;
+    gap: 2rem;
+    z-index: 10;
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: 0.9fr 1.1fr;
+        /* Give more space to visual if needed, or balance it */
+        gap: 0;
+    }
+}
+
+.content {
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .content {
+        text-align: left;
+    }
+}
+
+.visuals {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctaGroup {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.primaryButton {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border: none;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s ease, background-color 0.2s;
+}
+
+.primaryButton:hover {
+    transform: scale(1.05);
+    background-color: #000;
+}
+
+.arrowIcon {
+    font-size: 1.2rem;
+}
+
+.linkButton {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.linkButton:hover {
+    text-decoration: underline;
+}
+
+/* Specific overrides for pixel perfect match */
+.title {
+    font-family: var(--font-heading);
+    font-size: clamp(4rem, 9vw, 8rem);
+    font-weight: 600;
+    line-height: 0.95;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+}
+
+.subtitle {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--text-secondary);
+    max-width: 450px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+@media (min-width: 1024px) {
+    .subtitle {
+        margin: 0;
+    }
+}

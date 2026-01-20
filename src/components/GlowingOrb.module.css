@@ -1,0 +1,89 @@
+.container {
+    position: absolute;
+    top: -10%;
+    right: -15%;
+    width: 250px;
+    height: 250px;
+    pointer-events: none;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.magneticWaves {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.wavePath {
+    fill: none;
+    stroke: rgba(100, 100, 100, 0.2);
+    vector-effect: non-scaling-stroke;
+}
+
+.orbWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.orbGlow {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    width: 200%;
+    /* Much larger glow */
+    height: 200%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 230, 100, 0.9) 0%, rgba(212, 175, 55, 0.5) 40%, rgba(255, 255, 255, 0) 70%);
+    filter: blur(40px);
+    box-shadow: 0 0 80px 40px rgba(255, 200, 50, 0.3);
+    animation: pulse 3s infinite ease-in-out;
+    mix-blend-mode: screen;
+    /* clearer glow */
+}
+
+.orbText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #1d1500;
+    text-transform: uppercase;
+    line-height: 1.2;
+    z-index: 21;
+    letter-spacing: 0.05em;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
