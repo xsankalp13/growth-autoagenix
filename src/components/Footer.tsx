@@ -21,22 +21,13 @@ export default function Footer() {
                     </div>
                 </div>
 
-                {/* Product Links */}
+                {/* Navigation Links */}
                 <div className={styles.column}>
-                    <h4 className={styles.columnTitle}>Product</h4>
-                    <a href="#" className={styles.link}>About us</a>
-                    <a href="#" className={styles.link}>Features</a>
-                    <a href="#" className={styles.link}>Get App</a>
-                    <a href="#" className={styles.link}>Pricing</a>
-                </div>
-
-                {/* Services Links */}
-                <div className={styles.column}>
-                    <h4 className={styles.columnTitle}>Services</h4>
-                    <a href="#" className={styles.link}>Contact Us</a>
-                    <a href="#" className={styles.link}>Help Center</a>
-                    <a href="#" className={styles.link}>How It Works</a>
-                    <a href="#" className={styles.link}>Pricing</a>
+                    <h4 className={styles.columnTitle}>Navigation</h4>
+                    <Link href="/about" className={styles.link}>About us</Link>
+                    <Link href="/brand-growth" className={styles.link}>How It Works</Link>
+                    <Link href="/results" className={styles.link}>Results</Link>
+                    <Link href="/contact" className={styles.link}>Contact</Link>
                 </div>
 
                 {/* Newsletter */}

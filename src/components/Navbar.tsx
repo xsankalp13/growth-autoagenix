@@ -10,9 +10,8 @@ export default function Navbar() {
                 Growth Autoagenix
             </Link>
             <div className={styles.navLinks}>
-                <Link href="/#services" className={styles.link}>Services</Link>
                 <Link href="/brand-growth" className={styles.link}>How It Works</Link>
-                <Link href="/#results" className={styles.link}>Results</Link>
+                <Link href="/results" className={styles.link}>Results</Link>
                 <Link href="/about" className={styles.link}>About</Link>
                 <Link href="/contact" className={styles.link}>Contact</Link>
             </div>
